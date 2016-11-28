@@ -1,12 +1,12 @@
 #functions in another file ("other fiels are just old version just check this file")
 source('healperFunctions.R')
 #-------------- Read Data
-df <- getAndMergeData("../UCI HAR Dataset/train/X_train.txt",
-                      "../UCI HAR Dataset/train/y_train.txt",
-                      "../UCI HAR Dataset/test/X_test.txt",
-                      "../UCI HAR Dataset/test/y_test.txt",
-                      "../UCI HAR Dataset/train/subject_train.txt",
-                      "../UCI HAR Dataset/test/subject_test.txt")
+df <- getAndMergeData("UCI HAR Dataset/train/X_train.txt",
+                      "UCI HAR Dataset/train/y_train.txt",
+                      "UCI HAR Dataset/test/X_test.txt",
+                      "UCI HAR Dataset/test/y_test.txt",
+                      "UCI HAR Dataset/train/subject_train.txt",
+                      "UCI HAR Dataset/test/subject_test.txt")
 
 #--------------- Read Feature Names
 feature_names <- read_lines("../UCI HAR Dataset/features.txt")
@@ -33,5 +33,6 @@ by_act_sub = filtered_df %>% group_by(response,subject_ID)
 new_data <- summarise_each(by_act_sub,funs(mean))
 
 #--------------- Save File
-write.csv(new_data,"newData.csv")
+
+write.table(new_data,row.names = FALSE,"newData.csv")
 write_lines(names(new_data),"newfeatures_names.txt")
