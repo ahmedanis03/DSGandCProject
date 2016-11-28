@@ -72,3 +72,13 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
+
+# Steps Done:
+
+1. read data and merged them
+2. read feature names and parsed them using regular expression 
+3. applied transformation for each parth of the feature name to give it a descrptive one (name splitting provided above)
+4. filtered the feature names based on a given pettern (here it is mean and std) 
+5. used dplyr group by feature to summarize each column by response and subject
+6. write newData and feature names 
