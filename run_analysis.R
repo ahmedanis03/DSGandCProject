@@ -9,7 +9,7 @@ df <- getAndMergeData("UCI HAR Dataset/train/X_train.txt",
                       "UCI HAR Dataset/test/subject_test.txt")
 
 #--------------- Read Feature Names
-feature_names <- read_lines("../UCI HAR Dataset/features.txt")
+feature_names <- read_lines("UCI HAR Dataset/features.txt")
 
 #--------------- Parse, change feature names and find targeted features
 splitted_names <- str_match_all(feature_names,"([0-9]{1,3}) (\\w*)-(\\w*\\(?\\)?)-?(.*)|([0-9]{1,3}) (\\w*)(.*)")
