@@ -1,6 +1,8 @@
 # Features for new data
 ## Features Description
+
 Every _ split something meaningful for the data so lets check the possible values
+
 1. Raw (Original) Or FFT (Fast Fourier Transform)
 2. Body Or Gravity Measure
 3. measure source: accelerometer or gyroscope
@@ -8,10 +10,13 @@ Every _ split something meaningful for the data so lets check the possible value
 5. Is Jerk Signal? 
 6. Is Magnitude?
 7. dimention: X,Y,Z (if exist)
-### First two features are the grouping ones: 
+
+First two features are the grouping ones: 
+
 1. respone: represent the grouping Activity
 2. subject_ID: represent each subject
-'''
+
+
 response
 subject_ID
 Raw_Body_accelerometer_mean()_X
@@ -93,12 +98,13 @@ FFT_Body_gyroscope_Magnitude_meanFreq()_
 FFT_Body_gyroscope_JerkSignal_Magnitude_mean()_
 FFT_Body_gyroscope_JerkSignal_Magnitude_std()_
 FFT_Body_gyroscope_JerkSignal_Magnitude_meanFreq()_
-'''
+
 
 # Steps Done:
-1) read data and merged them
-2) read feature names and parsed them using regular expression 
-3) applied transformation for each parth of the feature name to give it a descrptive one (name splitting provided above)
-4) filtered the feature names based on a given pettern (here it is mean and std) 
-5) used dplyr group by feature to summarize each column by response and subject
-6) write newData and feature names 
+
+1. read data and merged them
+2. read feature names and parsed them using regular expression 
+3. applied transformation for each parth of the feature name to give it a descrptive one (name splitting provided above)
+4. filtered the feature names based on a given pettern (here it is mean and std) 
+5. used dplyr group by feature to summarize each column by response and subject
+6. write newData and feature names 
