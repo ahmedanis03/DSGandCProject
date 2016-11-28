@@ -1,16 +1,16 @@
 # Features for new data
 ## Features Description
 Every _ split something meaningful for the data so lets check the possible values
-1: Raw (Original) Or FFT (Fast Fourier Transform)
-2: Body Or Gravity Measure
-3: measure source: accelerometer or gyroscope
-4: summary function applied: mean or std
-5: Is Jerk Signal? 
-6: Is Magnitude?
-7: dimention: X,Y,Z (if exist)
-First two features are the grouping ones: 
-respone: represent the grouping Activity
-subject_ID: represent each subject
+1. Raw (Original) Or FFT (Fast Fourier Transform)
+2. Body Or Gravity Measure
+3. measure source: accelerometer or gyroscope
+4. summary function applied: mean or std
+5. Is Jerk Signal? 
+6. Is Magnitude?
+7. dimention: X,Y,Z (if exist)
+### First two features are the grouping ones: 
+1. respone: represent the grouping Activity
+2. subject_ID: represent each subject
 '''
 response
 subject_ID
