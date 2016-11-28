@@ -16,31 +16,7 @@ First two features are the grouping ones:
 1. respone: represent the grouping Activity
 2. subject_ID: represent each subject
 
-
-response
-subject_ID
-Raw_Body_accelerometer_mean()_X
-Raw_Body_accelerometer_mean()_Y
-Raw_Body_accelerometer_mean()_Z
-Raw_Body_accelerometer_std()_X
-Raw_Body_accelerometer_std()_Y
-Raw_Body_accelerometer_std()_Z
-Raw_Gravity_accelerometer_mean()_X
-Raw_Gravity_accelerometer_mean()_Y
-Raw_Gravity_accelerometer_mean()_Z
-Raw_Gravity_accelerometer_std()_X
-Raw_Gravity_accelerometer_std()_Y
-Raw_Gravity_accelerometer_std()_Z
-Raw_Body_accelerometer_JerkSignal_mean()_X
-Raw_Body_accelerometer_JerkSignal_mean()_Y
-Raw_Body_accelerometer_JerkSignal_mean()_Z
-Raw_Body_accelerometer_JerkSignal_std()_X
-Raw_Body_accelerometer_JerkSignal_std()_Y
-Raw_Body_accelerometer_JerkSignal_std()_Z
-Raw_Body_gyroscope_mean()_X
-Raw_Body_gyroscope_mean()_Y
-Raw_Body_gyroscope_mean()_Z
-Raw_Body_gyroscope_std()_X
+```
 response
 
 subject_ID
@@ -202,7 +178,7 @@ FFT_Body_gyroscope_JerkSignal_Magnitude_mean()_
 FFT_Body_gyroscope_JerkSignal_Magnitude_std()_
 
 FFT_Body_gyroscope_JerkSignal_Magnitude_meanFreq()_
-
+```
 
 
 # Steps Done:
