@@ -1,4 +1,6 @@
 #functions in another file ("other fiels are just old version just check this file")
+library("dplyr")
+library("stringr")
 source('healperFunctions.R')
 #-------------- Read Data
 df <- getAndMergeData("UCI HAR Dataset/train/X_train.txt",
